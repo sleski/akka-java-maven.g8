@@ -1,4 +1,4 @@
-package $package$;
+package $group_id$;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -8,7 +8,7 @@ import akka.dispatch.Future;
 import akka.dispatch.OnSuccess;
 import static akka.pattern.Patterns.ask;
 
-public class ExampleApp {
+public class $name;format="Camel"$ {
 
     public static class Counter extends UntypedActor {
         int count = 0;
@@ -24,7 +24,7 @@ public class ExampleApp {
     }
 
     public static void main(String... args) {
-        ActorSystem system = ActorSystem.create("example");
+        ActorSystem system = ActorSystem.create("$name;format="Camel"$");
 
         ActorRef counter = system.actorOf(new Props(Counter.class));
 

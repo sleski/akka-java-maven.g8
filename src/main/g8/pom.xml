@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>$group_id$</groupId>
-  <artifactId>$artifact_id$</artifactId>
+  <artifactId>$name;format="norm"$</artifactId>
   <version>$version$</version>
   <name>$name$</name>
 
@@ -35,7 +35,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
         <configuration>
-          <mainClass>$package$.ExampleApp</mainClass>
+          <mainClass>$group_id$.$name;format="Camel"$</mainClass>
         </configuration>
       </plugin>
     </plugins>
